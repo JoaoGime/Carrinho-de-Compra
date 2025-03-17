@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido de Compra</title>
+</head>
+<body>
+    <center>
+    <h1>Pedido de Compra</h1>
+    <script>
+        var nomeUsuario =prompt("Digite o seu Nome: ")
+        var precoCafe =parseFloat(prompt("Digite o Preço do Café"))
+        var quantidadeCafe =parseInt(prompt("Digite a Quantidade de Café"))
+        document.write("Café: " + precoCafe * quantidadeCafe)
+        document.write("<br>")
+        var precoPao =parseFloat(prompt("Digite o Preço do Pão"))
+        var quantidadePao =parseInt(prompt("Digite a Quantidade de Pão"))
+        document.write("Pão: " + precoPao * quantidadePao)
+        document.write("<br>")
+        var precoManteiga =parseFloat(prompt("Digite o Preço da Manteiga"))
+        var quantidadeManteiga =parseInt(prompt("Digite a Quantidade de Manteiga"))
+        document.write("Manteiga: " + precoManteiga * quantidadeManteiga)
+        document.write("<br>")
+        var precoQueijo =parseFloat(prompt("Digite o Preço do KG do Queijo"))
+        var quantidadeQueijo =parseInt(prompt("Digite a Quantidade de Queijo em Gramas"))
+        document.writeln("Queijo: " + (precoQueijo * quantidadeQueijo / 1000).toFixed(2))
+        document.write("<br>")
+        var totalCompra =precoCafe * quantidadeCafe + precoPao * quantidadePao + precoManteiga * quantidadeManteiga + precoQueijo * quantidadeQueijo / 1000
+        document.writeln("Total da Compra: " + totalCompra.toFixed(2))
+    </script>
+    </center>
+</body>
+</html>
